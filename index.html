@@ -1114,9 +1114,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     #inicio {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
-      padding: 92px 5vw 52px;
+      padding: 92px 5vw 0;
       text-align: center;
       gap: 0;
+      min-height: auto;
     }
     .hero-content { grid-column: 1; grid-row: 1; }
     .hero-label { justify-content: center; }
@@ -1124,7 +1125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .hero-actions { justify-content: center; }
     .hero-actions .btn-primary,
     .hero-actions .btn-outline { width: 100%; text-align: center; padding: 14px 20px; }
-    .hero-visual { display: none; }
+    .hero-visual { display: none; grid-row: unset; grid-column: unset; height: 0; padding: 0; margin: 0; }
     .hero-stats { grid-column: 1; grid-row: 2; gap: 20px; justify-content: center; padding-top: 24px; margin-top: 32px; }
 
     /* Sections */
@@ -1226,7 +1227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="hero-grid-bg" aria-hidden="true"></div>
   <div class="hero-content">
     <p class="hero-label">Puebla, México</p>
-    <h1 class="hero-h1">Diseñamos el espacio<br>que <em>imaginaste</em></h1>
+    <h1 class="hero-h1">Diseñamos el espacio<br>que <em>imaginaste.</em></h1>
     <p class="hero-body">Arquitectura contemporánea, construcción de casas y cálculo estructural en Puebla. Del plano a la obra, con precisión técnica y visión de diseño.</p>
     <div class="hero-actions">
       <a href="#contacto" class="btn-primary">Solicitar cotización</a>
